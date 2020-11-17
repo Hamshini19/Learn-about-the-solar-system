@@ -1,1 +1,334 @@
 
+<!DOCTYPE html>
+<!-- Information from Google!-->
+<html> 
+ <head>
+    <title>Solar system</title> 
+    <style>
+	    body {
+		    background-image: url(https://tse1.mm.bing.net/th?id=OIP.vuzWbZDdq9b_Q8Pq1BGF0wHaEL&pid=Api&P=0&w=287&h=162);
+			font-family: sans-serif;            
+		}
+		#info {
+			width: 30%;
+			height: 98%;
+			background: white;
+			border-radius: 10px;
+            position: absolute;
+			bottom: 10px;
+        }
+	    
+		
+		#info-select {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 180px;
+		    border-radius: 4px;
+            background-color: #f1f1f1;
+			position: absolute;
+			left: 10px;
+            top: 10px;
+			-webkit-user-select: none;
+            -ms-user-select: none; 
+            user-select: none; 
+		}
+		
+		#info-display {
+		    width: 55%;
+			height: 25%;
+			margin: 10px;
+			padding: 10px;
+			margin-bottom: none;
+			padding-bottom: none;
+			position: absolute;
+			border-radius: 3px;
+			left: 200px;
+			top: 90px;
+		}
+		
+	    #subject-heading {
+		    text-align: center;		
+			width: 55%;
+			position: absolute;
+			left: 200px;
+			margin: 10px;
+			padding: 10px;
+		}
+		
+		#info-heading {
+		    position: absolute;
+			left: 210px;
+			top: 60px;
+			font-weight: bold;
+			z-index: 1;
+		}
+
+		
+		#sun-text {
+		    border-top: 2.85px solid black;
+		}
+
+		li { 
+            color: grey;
+            padding: 8px 16px;
+			padding-bottom: 26px;
+	        border: 2.85px solid black;
+			border-top: none;
+            text-decoration: none;
+        }
+
+		li:hover {
+		    opacity: 0.5;
+			background-opacity: 0.5;
+		}
+	</style>
+ </head>
+ <body>
+	<svg width="1800px" height="920px" viewBox = "0 0 2900 2900">
+	    <!-- The sun - our nearest star !-->
+		<circle r = "80" cx = "2200" cy = "1600" fill = "rgb(255, 155, 0)" opacity = "0.8"/>
+		<!-- Mercury - a planet !-->
+		<path d = "M2040,1600 a160,160 0 1,0 320,0a160,160 0 1,0 -320,0" fill = "none" stroke = "grey" stroke-dasharray = "5, 5"/>
+		<circle r = "20" fill = "grey" style = "opacity: 0.9">
+            <animateMotion path = "M2040,1600 a160,160 0 1,0 320,0a160,160 0 1,0 -320,0" dur = "8s" repeatCount = "indefinite" />
+
+		</circle>
+	    <!-- Mercury text !-->
+		<text style = "font-size: 18px">Mer
+		    <animateMotion path = "M2023,1605a160,160 0 1,0 320,0a160,160 0 1,0 -320,0" dur = "8s" repeatCount = "indefinite" />
+		</text>
+		<!-- Venus - a planet !-->
+		<path d = "M1950,1600a250,250 0 1,0 500,0a250,250 0 1,0 -500,0" fill = "none" stroke = "grey" stroke-dasharray = "5, 5"/>
+		<circle r = "30" cx = "500" fill = "rgb(255, 183, 107)" style = "opacity: 0.9">
+			<animateMotion  path = "M1450,1600a250,250 0 1,0 500,0a250,250 0 1,0 -500,0" dur = "10s" repeatCount = "indefinite" />
+        </circle>
+		<!-- Venus text !-->
+        <text style = "font-size: 18px">Venus
+		    <animateMotion path = "M1930,1605a250,250 0 1,0 500,0a250,250 0 1,0 -500,0" dur = "10s" repeatCount = "indefinite" />
+		</text>		
+		<!-- Earth - our home planet !-->
+		<path  d = "M1860,1600a340,340 0 1,0 680,0a340,340 0 1,0 -680,0" fill = "none" stroke = "grey" stroke-dasharray = "5, 5" />
+		<circle r = "35" fill = "green" style = "opacity: 0.9">
+	        <animateMotion path = "M1860,1600a340,340 0 1,0 680,0a340,340 0 1,0 -680,0" dur = "15s" repeatCount = "indefinite" />
+		</circle>
+		<!-- Earth text !-->
+		<text style = "font-size: 18px">Earth
+		    <animateMotion path = "M1840,1605a340,340 0 1,0 680,0a340,340 0 1,0 -680,0" dur = "15s" repeatCount = "indefinite" />
+		</text>	
+		<!-- Mars - a planet !-->
+		<path d = "M1760,1600a440,440 0 1,0 880,0a440,440 0 1,0 -880,0" fill = "none" stroke = "grey" stroke-dasharray = "5, 5" />
+		<circle r = "25" fill = "red" style = "opacity: 0.9">
+		    <animateMotion path = "M1760,1600a440,440 0 1,0 880,0a440,440 0 1,0 -880,0" dur = "20s" repeatCount = "indefinite" />
+		</circle>
+		<!-- Mars text !-->
+		<text style = "font-size: 18px">Mars
+		    <animateMotion path = "M1740,1602.5a440,440 0 1,0 880,0a440,440 0 1,0 -880,0" dur = "20s" repeatCount = "indefinite" />
+		</text>	
+		<!-- Ceres - a dwarf planet !-->
+		<path d = "M1715,1600a490,490 0 1,0 980,0a490,490 0 1,0 -980,0" fill = "none" stroke = "white" stroke-dasharray = "2, 5"/>
+		<circle r = "10" fill = "rgb(166, 166, 166)" style = "opacity: 0.9;">
+		    <animateMotion path = "M1715,1600a490,490 0 1,0 980,0a490,490 0 1,0 -980,0" dur = "22s" repeatCount = "indefinite" />
+		</circle>
+		<!-- Jupiter - a planet !--> 
+		<path d = "M1650,1600a550,550 0 1,0 1100,0a550,550 0 1,0 -1100,0" fill = "none" stroke = "grey" stroke-dasharray = "5, 5" />
+		<circle r = "48" fill = "orange" style = "opacity: 0.9" >
+		    <animateMotion path = "M1650,1600a550,550 0 1,0 1100,0a550,550 0 1,0 -1100,0" dur = "24s" repeatCount = "indefinite" />
+		</circle>
+		<!-- Jupiter text !-->
+		<text style = "font-size: 18px">Jupiter
+		    <animateMotion path = "M1625,1600a550,550 0 1,0 1100,0a550,550 0 1,0 -1100,0" dur = "24s" repeatCount = "indefinite" />
+		</text>	
+		<!-- Saturn - a planet !-->
+		<path d = "M1520,1600a680,680 0 1,0 1360,0a680,680 0 1,0 -1360,0" fill = "none" stroke = "grey" stroke-dasharray = "5, 5" />
+	    <circle r = "45" fill = "white" style = "opacity: 0.9" >
+		    <animateMotion path = "M1520,1600a680,680 0 1,0 1360,0a680,680 0 1,0 -1360,0" dur = "28s" repeatCount = "indefinite"/>
+ 		</circle>
+		<!-- Saturn's ring - made of dust particles !-->
+		<ellipse rx = "68" ry = "10" fill = "grey">
+		    <animateMotion path = "M1520,1600a680,680 0 1,0 1360,0a680,680 0 1,0 -1360,0" dur = "28s" repeatCount = "indefinite" />
+		</ellipse>
+		<!-- Saturn text !-->
+		<text style = "font-size: 18px">Saturn
+		    <animateMotion path = "M1500,1605a680,680 0 1,0 1360,0a680,680 0 1,0 -1360,0" dur = "28s" repeatCount = "indefinite" />
+		</text>	
+		<!-- Uranus - a planet !-->
+		<path d = "M1410,1600a790,790 0 1,0 1580,0a790,790 0 1,0 -1580,0" fill = "none" stroke = "grey" stroke-dasharray = "5, 5" />
+        <circle r = "45" fill = "lightblue" style = "opacity: 0.9" >
+		    <animateMotion path = "M1410,1600a790,790 0 1,0 1580,0a790,790 0 1,0 -1580,0" dur = "32s" repeatCount = "indefinite"/>
+ 		</circle>
+        <!-- Uranus text !-->
+		<text style = "font-size: 18px;">Uranus
+		    <animateMotion path = "M1385,1605a790,790 0 1,0 1580,0a790,790 0 1,0 -1580,0" dur = "32s" repeatCount = "indefinite" />
+		</text>	
+		<!-- Neptune - a planet!-->
+		<path d = "M1310,1600a890,890 0 1,0 1780,0a890,890 0 1,0 -1780,0" fill = "none" stroke = "grey" stroke-dasharray = "5, 5" />
+		<circle r = "45" fill = "blue" style = "opacity: 0.9" >
+		    <animateMotion path = "M1310,1600a890,890 0 1,0 1780,0a890,890 0 1,0 -1780,0" dur = "35s" repeatCount = "indefinite"/>
+ 		</circle>
+        <!-- Neptune text !-->
+		<text style = "font-size: 18px;">Neptune
+		    <animateMotion path = "M1280,1605a890,890 0 1,0 1780,0a890,890 0 1,0 -1780,0" dur = "35s" repeatCount = "indefinite" />
+		</text>	
+        <!-- Pluto - a dwarf planet !-->
+        <path d = "M1210,1600a990,990 0 1,0 1980,0a990,990 0 1,0 -1980,0" fill = "none" stroke = "white" stroke-dasharray = "2, 5" />
+		<circle r = "15" fill = "white" style = "opacity: 0.9">
+		    <animateMotion path = "M1220,1600a990,990 0 1,0 1980,0a990,990 0 1,0 -1980,0" dur = "40s" repeatCount = "indefinite" />
+		</circle>
+		<!-- Pluto text !-->
+		<text style = "font-size: 18px">Plu
+		    <animateMotion path = "M1210,1605a990,990 0 1,0 1980,0a990,990 0 1,0 -1980,0" dur = "40s" repeatCount = "indefinite" />
+		</text>
+		<!-- Haumea - a dwarf planet !-->
+		<path d = "M1100,1600a1100,1100 0 1,0 2200,0a1100,1100 0 1,0 -2200,0" fill = "none" stroke = "white" stroke-dasharray = "2, 5" />
+		<circle r = "12" fill = "brown" style = "opacity: 0.9">
+		    <animateMotion path = "M1100,1600a1100,1100 0 1,0 2200,0a1100,1100 0 1,0 -2200,0" dur = "43s" repeatCount = "indefinite" />
+		</circle>
+		<!-- Haumea text !-->
+		<text style = "font-size: 18px">Ha
+		    <animateMotion path = "M1090,1605a1100,1100 0 1,0 2200,0a1100,1100 0 1,0 -2200,0" dur = "43s" repeatCount = "indefinite" />
+		</text>
+		<!-- Makemake - a dwarf planet !-->
+	    <path d = "M1000,1600a1200,1200 0 1,0 2400,0a1200,1200 0 1,0 -2400,0" fill = "none" stroke = "white" stroke-dasharray = "2, 5" />
+		<circle r = "11" fill = "rgb(186, 37, 37)" style = "opacity: 0.9">
+		    <animateMotion path = "M1000,1600a1200,1200 0 1,0 2400,0a1200,1200 0 1,0 -2400,0" dur = "45s" repeatCount = "indefinite" />
+		</circle>
+		<!-- Eris - a dwarf planet !-->
+		<path d = "M900,1600a1300,1300 0 1,0 2600,0a1300,1300 0 1,0 -2600,0" fill = "none" stroke = "white" stroke-dasharray = "2, 5" />
+		<circle r = "13" fill = "#9f8373" style = "opacity: 0.9">
+		    <animateMotion path = "M900,1600a1300,1300 0 1,0 2600,0a1300,1300 0 1,0 -2600,0" dur = "48s" repeatCount = "indefinite" />
+		</circle>
+		<!-- Eris text !--> 
+		<text style = "font-size: 18px"> Eri
+		    <animateMotion path = "M890,1605 a1300,1300 0 1,0 2600,0a1300,1300 0 1,0 -2600,0" dur = "48s" repeatCount = "indefinite" />
+		</text>
+		<!-- <circle r = "1300" cx = "2000" cy = "1800" fill = "none" stroke = "red"/> -->
+    </svg>
+	<div id = "info">
+        <ul id = "info-select">
+		<li id = "sun-text">The sun - a star</li>
+		<li id = "mercury-text">Mercury - planet</li>
+		<li id = "venus-text">Venus - planet</li>
+		<li id = "earth-text">Earth - planet</li>
+		<li id = "moon-text" >The moon - a natural satellite</li>
+		<li id = "mars-text">Mars - planet</li>
+		<li id = "ceres-text">Ceres - dwarf planet</li>
+		<li id = "jupiter-text">Jupiter - planet</li>
+		<li id = "saturn-text">Saturn - planet</li>		
+		<li id = "uranus-text">Uranus - planet</li>		
+		<li id = "neptune-text">Neptune - planet</li>		
+		<li id = "pluto-text">Pluto - dwarf planet</li>		
+		<li id = "haumea-text">Haumea - a dwarf planet</li>		
+		<li id = "makemake-text">Makemake - a dwarf planet</li>		
+		<li id = "eris-text">Eris - a dwarf planet</li>		
+		</ul>
+		<h3 id = "subject-heading"></h3>
+		<h4 id = "info-heading"></h4>
+		<p id = "info-display"></p>
+
+	</div>
+	<script>
+		var solarSystem = [
+		    document.getElementById("sun-text"),
+            document.getElementById("mercury-text"),
+			document.getElementById("venus-text"),
+			document.getElementById("earth-text"),
+			document.getElementById("moon-text"),
+			document.getElementById("mars-text"),
+			document.getElementById("ceres-text"),
+			document.getElementById("jupiter-text"),
+			document.getElementById("saturn-text"),
+			document.getElementById("uranus-text"),
+			document.getElementById("neptune-text"),
+			document.getElementById("pluto-text"),
+			document.getElementById("haumea-text"),
+			document.getElementById("makemake-text"),
+			document.getElementById("eris-text"),
+		
+		];
+
+		var displayInfoP = document.getElementById("info-display");
+		var displayStatP = document.getElementById("stat-display");
+		var subjectHeading = document.getElementById("subject-heading");
+		var infoHeading = document.getElementById("info-heading");
+		var li = document.getElementsByTagName("li");
+		for (var i = 0; i < solarSystem.length; i++) {
+		    solarSystem[i].addEventListener("click", function() {
+				var element = this;
+				for (var j = 0; j < li.length; j++) {
+					li[j].style.background = "#f1f1f1";
+					li[j].style.color = "grey";
+                }
+				element.style.background = "#555";
+				element.style.color = "white";
+				displayInfoP.style.background = "#f1f1f1";
+				infoHeading.textContent = "Information";
+				subjectHeading.style.background = "yellow";
+				if (element === solarSystem[0]) {
+				    subjectHeading.innerHTML = "The sun";
+					displayInfoP.innerHTML = "The Sun is the star in the center of our solar system. It is a yellow dwarf star. It gives off energy as light. That includes light, infra-red energy (heat), ultraviolet light and radio waves."    
+				}
+				else if (element === solarSystem[1]) {
+				    subjectHeading.innerHTML = "Mercury";
+					displayInfoP.innerHTML = "Mercury is the smallest and first planet to the Sun in the Solar System. It orbits around the Sun in about 88 days. A day on Mercury is around 59 Earth days. Mercury has no moons."
+				}
+				else if (element === solarSystem[2]) {
+				    subjectHeading.innerHTML = "Venus";
+					displayInfoP.innerHTML = "Venus is the second planet from the Sun. A year on Venus is 225 Earth days. A day on Venus is 243 Earth days. Venus has no moons."
+                }
+				else if (element === solarSystem[3]) {
+                    subjectHeading.innerHTML = "Earth";
+					displayInfoP.innerHTML = "Earth is the third planet from the Sun and the only planet to sustain life. It takes 365 days (1 year) to orbit around the Sun. It takes 24 hours (1 day) to rotate. It has one moon."
+				}
+				else if (element === solarSystem[4]) {
+				    subjectHeading.innerHTML = "The moon";
+					displayInfoP.innerHTML = "The Moon is Earth's largest natural satellite. It is the brightest object in the night sky. It takes 28 days to revolve around the Earth. It appears to change shape but it is just our view of the moon from Earth."		
+				}
+				else if (element === solarSystem[5]) {
+                    subjectHeading.innerHTML = "Mars";
+					displayInfoP.innerHTML = "Mars is the fourth planet from the Sun. One year on Mars is 687 days. It takes around 25 hours for Mars to rotate once. Mars has two moons: Phobos and Deimos."
+				
+				}
+				else if (element === solarSystem[6]) {
+                    subjectHeading.innerHTML = "Ceres";
+					displayInfoP.innerHTML = "Ceres is a dwarf planet. Ceres is the largest object in the main asteroid belt that lies between Mars and Jupiter. It takes 4.6 Earth years to orbit the Sun. It takes 9 hours to rotate once."
+				}
+				else if (element === solarSystem[7]) {
+				    subjectHeading.innerHTML = "Jupiter";
+					displayInfoP.innerHTML = "Jupiter is the fifth planet from the Sun. It takes 12 Earth years to orbit the Sun. One day on Jupiter is about 10 hours. Jupiter has 79 moons.";
+				}
+				else if (element === solarSystem[8]) {
+				    subjectHeading.innerHTML = "Saturn";
+					displayInfoP.innerHTML = "Saturn is the sixth planet from the Sun. One year on Saturn is 29 Earth years. One day on Saturn is 11 hours. Saturn has 82 moons."
+				}
+				else if (element === solarSystem[9]) {
+				    subjectHeading.innerHTML = "Uranus";
+					displayInfoP.innerHTML = "Uranus is the seventh planet from the Sun. It takes 84 Earth years for it to orbit the Sun. One day on Uranus is 17 hours. It has 27 moons."	
+                }	
+                else if (element === solarSystem[10]) {
+				    subjectHeading.innerHTML = "Neptune";
+					displayInfoP.innerHTML = "Neptune is the eighth planet from the Sun. It takes 165 Earth years to orbit the Sun. One day on Neptune is 16 hours. Neptune has 14 moons."
+                }	
+                else if (element === solarSystem[11]) {
+				    subjectHeading.innerHTML = "Pluto";
+					displayInfoP.innerHTML = "Pluto is a dwarf planet and used to be classified as a planet. It is located in the Kuiper belt. A year on Pluto is 248 Earth years. A day on Pluto is 6.5 Earth days. Pluto has 5 moons.";
+			    }	
+				else if (element === solarSystem[12]) {
+                    subjectHeading.innerHTML = "Haumea";
+					displayInfoP.innerHTML = "Haumea is a dwarf planet and is located in the Kuiper belt. A year on Haumea is 284 Earth years. A day on Haumea is only 4 hours. Haumea has 2 moons.";
+                }
+				else if (element === solarSystem[13]) {
+                    subjectHeading.innerHTML = "Makemake";
+					displayInfoP.innerHTML = "Makemake is a dwarf planet and is located in the Kuiper belt. It takes 306 Earth years to orbit the Sun. It takes 22.5 hours to rotate. Makemake has one moon.";
+				}
+				else if (element === solarSystem[14]) {
+                    subjectHeading.innerHTML = "Eris";
+					displayInfoP.innerHTML = "Eris is a dwarf planet and is located after the Kuiper belt in a region called 'scattered disc'. It takes 558 Earth years to orbit the Sun. One day on Eris is 25.9 hours. Eris has one moon: Dysnomia.";
+				}				
+			});
+		}
+		
+	</script>
+	</body>
+</html>
+
